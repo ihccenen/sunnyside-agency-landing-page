@@ -1,0 +1,153 @@
+.wrapper {
+  background-color: hsl(200, 100%, 62%);
+}
+
+.header {
+  position: relative;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  background-image: url('../../public/mobile/image-header.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 1.5em;
+  align-items: center;
+}
+
+.menu-btn {
+  background-color: transparent;
+  border: none;
+}
+
+.nav {
+  display: grid;
+  position: absolute;
+  color: hsl(210, 4%, 67%);
+  background-color: hsl(0, 0%, 100%);
+  padding: 2.4em 5.8em;
+  top: 19.5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  transform: translateY(-100%);
+  background-color: transparent;
+  border-left: 25px solid transparent;
+  border-bottom: 25px solid hsl(0, 0%, 100%);
+}
+
+.nav ul {
+  display: grid;
+  gap: 1.8rem;
+}
+
+.nav li {
+  cursor: pointer;
+}
+
+.nav li:not(:last-of-type) {
+  color: hsl(232, 10%, 55%);
+  font-size: 1.2rem;
+  padding: 0.14em;
+}
+
+.contact {
+  font-size: 1rem;
+  color: hsl(212, 27%, 19%);
+  background-color: hsl(51, 100%, 49%);
+  padding: 1.125rem 1.8rem;
+  border-radius: 50px;
+}
+
+.creative {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-top: 3.5rem;
+  letter-spacing: 6px;
+}
+
+.arrow {
+  margin-block: 3.1rem 8.3rem;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 751px) {
+  .header {
+    background-image: url('../../public/desktop/image-header.jpg');
+  }
+
+  .header-top {
+    padding: 2em 2.53em;
+    margin-inline: auto;
+  }
+
+  .logo {
+    height: 32px;
+    width: auto;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .nav {
+    display: grid;
+    position: inherit;
+    background-color: inherit;
+    transform: none;
+    padding: 0;
+  }
+
+  .nav::before {
+    display: hidden;
+  }
+
+  .nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    color: hsl(0, 0%, 100%);
+  }
+
+  .nav li:not(:last-of-type) {
+    color: hsl(0, 0%, 100%);
+  }
+
+  .nav li:not(:last-of-type):hover {
+    color: hsl(198, 62%, 26%);
+  }
+
+  .contact {
+    background-color: hsl(0, 0%, 100%);
+  }
+
+  .contact:hover {
+    background-color: hsl(200, 100%, 72%);
+    color: hsl(0, 0%, 100%);
+  }
+
+  .creative {
+    font-size: 3.5rem;
+    letter-spacing: 10px;
+    margin-top: 2.9rem;
+  }
+
+  .arrow {
+    margin-block: 5.8rem 20.5rem;
+  }
+}
