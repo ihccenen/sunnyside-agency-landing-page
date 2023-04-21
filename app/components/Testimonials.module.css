@@ -1,0 +1,39 @@
+.div {
+  display: grid;
+  gap: 3.85rem;
+  text-align: center;
+  color: hsl(232, 10%, 55%);
+  margin-block: 4rem;
+}
+
+.div > p {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.clients {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3.85rem;
+  padding-inline: 0.3em;
+}
+
+@media (min-width: 751px) {
+  .div {
+    gap: 5rem;
+    margin-block: 10rem;
+  }
+
+  .div > p {
+    font-size: 1.3rem;
+    letter-spacing: 5px;
+  }
+
+  .clients {
+    gap: 1.5rem;
+    flex-direction: row;
+  }
+}

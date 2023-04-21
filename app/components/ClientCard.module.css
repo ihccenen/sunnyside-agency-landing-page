@@ -1,0 +1,50 @@
+.card {
+  display: grid;
+  place-items: center;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  gap: 0.3rem;
+}
+
+.card img {
+  max-width: 72px;
+  border-radius: 100%;
+  height: auto;
+}
+
+.card p {
+  max-width: 32ch;
+}
+
+.msg {
+  color: hsl(213, 9%, 39%);
+  margin-top: 1.76rem;
+}
+
+.name {
+  color: hsl(212, 27%, 19%);
+  font-weight: 700;
+  margin-top: 1.2rem;
+}
+
+.position {
+  font-size: 0.85rem;
+}
+
+@media (min-width: 751px) {
+  .card {
+    gap: 0.24rem;
+  }
+
+  .card p {
+    max-width: 34ch;
+  }
+
+  .msg {
+    margin-top: 3.4rem;
+  }
+
+  .name {
+    margin-top: 3.65rem;
+  }
+}
